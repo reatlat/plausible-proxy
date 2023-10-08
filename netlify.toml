@@ -1,3 +1,3 @@
 [build]
-    command = "mkdir _site && echo '/api/event https://plausible.io/api/event 200' > _site/_redirects"
+    command = "mkdir _site && touch _site/{404,444}.html && echo '/api/event https://plausible.io/api/event 200' > _site/_redirects && echo '/* /444.html 444' >> _site/_redirects"
     publish = "_site"
